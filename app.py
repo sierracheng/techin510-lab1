@@ -1,15 +1,13 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Xinran Cheng",
-    page_icon="🤖",
+    page_title="Xinran Cheng - UX designer",
+    page_icon="👨🏻‍💻",
     layout="centered",  # centered or wide
     initial_sidebar_state="auto",
-) 
-col1, col2 = st.columns(2)
-col1.image('image/image.JPG', caption='in a library')
+)
 
-col1, col2 = st.columns([0.5, 0.5])
+col1, col2 = st.columns([0.3, 0.7])
 with col1:
     st.markdown(
         """
@@ -22,18 +20,19 @@ with col1:
 
     <div class="profile-img">
 
-    ![](https://www.xinrancheng.com/)
+    ![](https://avatars.githubusercontent.com/u/7678108?v=4)
     </div>
     """,
         unsafe_allow_html=True,
     )
-    
+    # st.image('https://avatars.githubusercontent.com/u/7678108?v=4')
 with col2:
     st.markdown(
         """
-    # Xinran Cheng (She/Her)
+    # Leah Lan (She/Her)
                 
-    Student at [GIX](https://gix.uw.edu/)
+    - UX designer
+    
     """
     )
 
@@ -66,7 +65,7 @@ for col in [col1, col2, col3]:
 
         <div class="profile-img">
 
-        ![](https://www.xinrancheng.com/)
+        ![](https://avatars.githubusercontent.com/u/7678108?v=4)
         </div>
         """,
         unsafe_allow_html=True,
@@ -74,7 +73,24 @@ for col in [col1, col2, col3]:
 
 col1, col2, col3 = st.columns(3)
 
+# Card with image and text
+for col in [col1, col2, col3]:
+    col.markdown(
+        """
+        <style>
+        .profile-img img {
+            width: 100%;
+            border-radius: 10%;
+        }
+        </style>
 
+        <div class="profile-img">
+
+        ![](https://avatars.githubusercontent.com/u/7678108?v=4)
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 ft = """
